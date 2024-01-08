@@ -49,6 +49,16 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile6`, function (sprite, l
     info.changeScoreBy(1)
     tiles.setTileAt(location, sprites.castle.tileGrass1)
 })
+scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile45`, function (sprite, location) {
+    game.showLongText("Jerry: this is so boring ", DialogLayout.Bottom)
+    game.showLongText("Ava: why are you here then?", DialogLayout.Bottom)
+    game.showLongText("Jerry: its my dad's show that's why", DialogLayout.Bottom)
+    game.showLongText("Ava: oh i understand", DialogLayout.Bottom)
+    game.showLongText("Ava: the boy outside said that this place is haunted ", DialogLayout.Bottom)
+    game.showLongText("Jerry: not haunted just boring ", DialogLayout.Bottom)
+    game.showLongText("Jerry: You should talk to my dad he can tell you more", DialogLayout.Bottom)
+    tiles.setCurrentTilemap(tilemap`level42`)
+})
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile34`, function (sprite, location) {
     tiles.setCurrentTilemap(tilemap`level35`)
     mySprite.setPosition(0, 106)
@@ -153,8 +163,8 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile24`, function (sprite, 
     info.setScore(10)
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile13`, function (sprite, location) {
-    tiles.setCurrentTilemap(tilemap`level20`)
     mySprite.setPosition(124, 111)
+    tiles.setCurrentTilemap(tilemap`level20`)
     game.showLongText("Ava: where am i now Mary", DialogLayout.Bottom)
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile7`, function (sprite, location) {
@@ -487,7 +497,7 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile11`, function (sprite, 
     tiles.setCurrentTilemap(tilemap`level19`)
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile30`, function (sprite, location) {
-    game.showLongText("be careful the church is haunted", DialogLayout.Bottom)
+    game.showLongText("Danny: be careful the church is haunted", DialogLayout.Bottom)
     tiles.setCurrentTilemap(tilemap`level34`)
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile26`, function (sprite, location) {
