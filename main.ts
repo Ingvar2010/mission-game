@@ -355,6 +355,97 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile21`, function (sprite, 
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile20`, function (sprite, location) {
     tiles.setCurrentTilemap(tilemap`level1`)
+    animation.runImageAnimation(
+    mySprite,
+    [img`
+        . . . . . . . . . . . . . . . . 
+        . . 7 . . . . . . . . . . . . . 
+        . . 7 7 . . . . . . . . . . . . 
+        . . . 7 7 7 . . . . . . . . . . 
+        . . . . . . 7 7 7 7 7 7 7 7 7 7 
+        . . . . . . . . . . . . . . . 7 
+        . . . . . . . . . . . . . . 7 7 
+        . 7 7 7 7 7 7 7 7 7 7 7 7 7 . . 
+        . 7 . . . . . . . . . . . . . . 
+        . 7 7 . . . . . . . . . . . . . 
+        . . . 7 7 . . . . . . . . . . . 
+        . . . . . 7 7 7 7 7 7 7 7 7 7 7 
+        . . . 7 . . . . . . . . . . . 7 
+        . . . 7 . . . . . . . . . . . 7 
+        . . . . 7 7 7 7 7 7 7 7 7 7 7 7 
+        . . . . . . . . . . . . . . . . 
+        `,img`
+        . . . . . . . . . . . . . . . . 
+        . . 7 . . . . . . . . . . . . . 
+        . . 7 7 . . . . 7 7 7 7 7 7 . . 
+        . . . 7 7 7 7 7 7 7 7 7 7 7 . . 
+        . . . 7 7 . 7 7 7 7 7 7 7 7 7 7 
+        . . 7 . . . . . . . . . . . . 7 
+        . . 7 . . . . . . . . . . . 7 7 
+        . 7 7 7 7 7 7 7 7 7 7 7 7 7 . . 
+        . 7 . . 7 7 7 7 7 7 . . . . . . 
+        . 7 7 . . . . . . . 7 7 . . . . 
+        . . . 7 7 . . . . . 7 7 . . . . 
+        . . . . . 7 7 7 7 7 7 7 7 7 7 7 
+        . . . 7 7 7 7 7 . . . . . . . 7 
+        . . . 7 . . . . . . . . . . . 7 
+        . . . . 7 7 7 7 7 7 7 7 7 7 7 7 
+        . . . . . . . . . . . . . . . . 
+        `,img`
+        . . . . . . . . . . . . . . . . 
+        . . 7 . . . . . . . . . . . . . 
+        . . 7 7 . e 7 7 7 7 7 7 7 7 . . 
+        . . . 7 7 7 7 7 7 7 7 7 7 7 . . 
+        . . . 7 7 7 7 7 7 7 7 7 7 7 7 7 
+        . . 7 . . . 7 7 7 7 . . . . . 7 
+        . . 7 . . e e e e e e . . . 7 7 
+        . 7 7 7 e e e 7 7 7 7 e e e . . 
+        . 7 . . e e 7 7 7 d 7 7 e e . . 
+        . 7 7 . . . d d d d d 7 7 7 . . 
+        . . . 7 7 d d d d d d 7 7 7 . . 
+        . . . . 7 7 7 7 7 7 7 7 7 7 7 7 
+        . . . 7 7 7 7 7 a a a a . . . 7 
+        . . . 7 . . . a a . . . . . . 7 
+        . . . . 7 7 f 7 7 7 7 7 f 7 7 7 
+        . . . . . . . . . . . . . . . . 
+        `,img`
+        . . . . . . . . . . . . . . . . 
+        . 7 . . . . . . . . . . . . . . 
+        . 7 7 7 . . . . . . . 7 7 . . . 
+        . . . 7 7 7 7 7 7 7 7 7 7 . . . 
+        . . . . . 7 7 7 7 7 7 7 7 7 7 . 
+        . . . 7 7 7 7 d 7 7 7 7 7 7 7 . 
+        . . 7 7 7 7 7 7 7 7 d e . . . . 
+        7 7 7 . e d f d d 7 7 e . . . . 
+        7 7 . . e d d d d d 7 7 . . . . 
+        7 7 7 7 e e d d d d e 7 . . . . 
+        7 7 7 . e e e d d e e 7 7 . . . 
+        . . 7 7 7 7 7 7 7 7 7 7 7 7 7 7 
+        . . . . . 7 7 7 7 7 7 . . . . 7 
+        . . . . . 7 a a a a 7 . . . . 7 
+        . . . . 7 7 7 7 7 7 7 7 7 7 7 7 
+        . . . 7 7 f f . . f f . . . . . 
+        `,img`
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . . . . . . . . . . . . 
+        . . . . . e e e e e e . . . . . 
+        . . . . e e d d d d e e . . . . 
+        . . . . e d d d d d d e . . . . 
+        . . . . e d f d d f d e . . . . 
+        . . . . e d d d d d d e . . . . 
+        . . . . e e d d d d e e . . . . 
+        . . . . e e e d d e e e . . . . 
+        . . . . . 7 7 7 7 7 7 . . . . . 
+        . . . . . 7 7 7 7 7 7 . . . . . 
+        . . . . . 7 a a a a 7 . . . . . 
+        . . . . . d a . . a d . . . . . 
+        . . . . . f f . . f f . . . . . 
+        `],
+    200,
+    false
+    )
 })
 controller.right.onEvent(ControllerButtonEvent.Pressed, function () {
     animation.runImageAnimation(
@@ -491,6 +582,16 @@ info.onScore(3, function () {
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile10`, function (sprite, location) {
     game.showLongText("Hey Ava i know that you are very smart so can you solve my riddle", DialogLayout.Bottom)
     tiles.setCurrentTilemap(tilemap`level14`)
+})
+scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile35`, function (sprite, location) {
+    game.showLongText("William: my show is going wonderfully!", DialogLayout.Bottom)
+    game.showLongText("William: it only starts in half an hour ", DialogLayout.Bottom)
+    game.showLongText("Ava: what kind of show is it?", DialogLayout.Bottom)
+    game.showLongText("William: its a comedy show ", DialogLayout.Bottom)
+    game.showLongText("Ava: why in a church then?", DialogLayout.Bottom)
+    game.showLongText("William: its a fundraiser ", DialogLayout.Bottom)
+    game.showLongText("William: our goal is 5000 dollars", DialogLayout.Bottom)
+    game.showLongText("Ava: thats wonderful  ", DialogLayout.Bottom)
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile11`, function (sprite, location) {
     game.showLongText("what has 4 legs but cant walk", DialogLayout.Bottom)
