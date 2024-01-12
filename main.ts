@@ -67,6 +67,10 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile34`, function (sprite, 
     mySprite.setPosition(0, 106)
     info.changeScoreBy(1)
 })
+scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile15`, function (sprite, location) {
+    game.showLongText("HAHAHAHA", DialogLayout.Bottom)
+    game.gameOver(false)
+})
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile22`, function (sprite, location) {
     tiles.setCurrentTilemap(tilemap`level27`)
 })
@@ -173,6 +177,10 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile13`, function (sprite, 
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile7`, function (sprite, location) {
     tiles.setTileAt(location, sprites.castle.tileGrass1)
     info.changeScoreBy(1)
+})
+scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile12`, function (sprite, location) {
+    game.showLongText("HAHAHAHA", DialogLayout.Bottom)
+    game.gameOver(false)
 })
 controller.left.onEvent(ControllerButtonEvent.Pressed, function () {
     animation.runImageAnimation(
@@ -355,6 +363,10 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile29`, function (sprite, 
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile21`, function (sprite, location) {
     game.showLongText("open the portal with a button", DialogLayout.Bottom)
     tiles.setCurrentTilemap(tilemap`level23`)
+})
+scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile16`, function (sprite, location) {
+    game.showLongText("HAHAHAHA", DialogLayout.Bottom)
+    game.gameOver(false)
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile20`, function (sprite, location) {
     tiles.setCurrentTilemap(tilemap`level1`)
