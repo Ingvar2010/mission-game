@@ -584,7 +584,9 @@ info.onScore(3, function () {
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile61`, function (sprite, location) {
     game.showLongText("join us", DialogLayout.Bottom)
-    tiles.setTileAt(location, assets.tile`myTile66`)
+})
+scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile62`, function (sprite, location) {
+    game.gameOver(false)
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile10`, function (sprite, location) {
     game.showLongText("Hey Ava i know that you are very smart so can you solve my riddle", DialogLayout.Bottom)
