@@ -68,7 +68,7 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile34`, function (sprite, 
     info.changeScoreBy(1)
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile15`, function (sprite, location) {
-    game.showLongText("HAHAHAHA", DialogLayout.Bottom)
+    game.showLongText("HAHAHAHA!", DialogLayout.Bottom)
     game.gameOver(false)
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile22`, function (sprite, location) {
@@ -179,7 +179,7 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile7`, function (sprite, l
     info.changeScoreBy(1)
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile12`, function (sprite, location) {
-    game.showLongText("HAHAHAHA", DialogLayout.Bottom)
+    game.showLongText("HAHAHAHA!", DialogLayout.Bottom)
     game.gameOver(false)
 })
 controller.left.onEvent(ControllerButtonEvent.Pressed, function () {
@@ -365,7 +365,7 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile21`, function (sprite, 
     tiles.setCurrentTilemap(tilemap`level23`)
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile16`, function (sprite, location) {
-    game.showLongText("HAHAHAHA", DialogLayout.Bottom)
+    game.showLongText("HAHAHAHA!", DialogLayout.Bottom)
     game.gameOver(false)
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile20`, function (sprite, location) {
