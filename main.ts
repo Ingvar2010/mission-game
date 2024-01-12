@@ -59,6 +59,9 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile45`, function (sprite, 
     game.showLongText("Jerry: You should talk to my dad he can tell you more", DialogLayout.Bottom)
     tiles.setCurrentTilemap(tilemap`level42`)
 })
+scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile60`, function (sprite, location) {
+    game.showLongText("join us ", DialogLayout.Bottom)
+})
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile34`, function (sprite, location) {
     tiles.setCurrentTilemap(tilemap`level35`)
     mySprite.setPosition(0, 106)
@@ -579,9 +582,16 @@ info.onScore(3, function () {
     info.stopCountdown()
     game.splash("Greg: Bye! Thank you!")
 })
+scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile61`, function (sprite, location) {
+    game.showLongText("join us", DialogLayout.Bottom)
+    tiles.setTileAt(location, assets.tile`myTile66`)
+})
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile10`, function (sprite, location) {
     game.showLongText("Hey Ava i know that you are very smart so can you solve my riddle", DialogLayout.Bottom)
     tiles.setCurrentTilemap(tilemap`level14`)
+})
+scene.onOverlapTile(SpriteKind.Player, assets.tile`transparency16`, function (sprite, location) {
+	
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile35`, function (sprite, location) {
     game.showLongText("William: my show is going wonderfully!", DialogLayout.Bottom)
