@@ -592,6 +592,9 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile35`, function (sprite, 
     game.showLongText("William: its a fundraiser ", DialogLayout.Bottom)
     game.showLongText("William: our goal is 5000 dollars", DialogLayout.Bottom)
     game.showLongText("Ava: thats wonderful  ", DialogLayout.Bottom)
+    game.showLongText("William: since your so interested why don't you see backstage ", DialogLayout.Bottom)
+    game.showLongText("William: there might be a ticket there", DialogLayout.Bottom)
+    tiles.setCurrentTilemap(tilemap`level43`)
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile11`, function (sprite, location) {
     game.showLongText("what has 4 legs but cant walk", DialogLayout.Bottom)
