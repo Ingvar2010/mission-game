@@ -61,6 +61,7 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile45`, function (sprite, 
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile60`, function (sprite, location) {
     game.showLongText("join us ", DialogLayout.Bottom)
+    tiles.setTileAt(location, assets.tile`myTile82`)
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile34`, function (sprite, location) {
     tiles.setCurrentTilemap(tilemap`level35`)
@@ -368,6 +369,14 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile16`, function (sprite, 
     game.showLongText("HAHAHAHA!", DialogLayout.Bottom)
     game.gameOver(false)
 })
+scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile54`, function (sprite, location) {
+    game.showLongText("arym si ont owh uoy iknth hse si", DialogLayout.Bottom)
+    tiles.setCurrentTilemap(tilemap`level48`)
+})
+scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile81`, function (sprite, location) {
+    tiles.setCurrentTilemap(tilemap`level43`)
+    mySprite.setPosition(-1, 119)
+})
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile20`, function (sprite, location) {
     tiles.setCurrentTilemap(tilemap`level1`)
     animation.runImageAnimation(
@@ -596,6 +605,7 @@ info.onScore(3, function () {
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile61`, function (sprite, location) {
     game.showLongText("join us", DialogLayout.Bottom)
+    tiles.setTileAt(location, assets.tile`myTile82`)
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile62`, function (sprite, location) {
     game.gameOver(false)
@@ -618,7 +628,7 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile35`, function (sprite, 
     game.showLongText("Ava: thats wonderful  ", DialogLayout.Bottom)
     game.showLongText("William: since your so interested why don't you see backstage ", DialogLayout.Bottom)
     game.showLongText("William: there might be a ticket there", DialogLayout.Bottom)
-    tiles.setCurrentTilemap(tilemap`level43`)
+    tiles.setCurrentTilemap(tilemap`level45`)
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile11`, function (sprite, location) {
     game.showLongText("what has 4 legs but cant walk", DialogLayout.Bottom)
