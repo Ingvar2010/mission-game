@@ -369,7 +369,8 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile90`, function (sprite, 
     game.showLongText("Mary: For now ", DialogLayout.Bottom)
     game.showLongText("Mary: This is the end Ava!", DialogLayout.Bottom)
     game.showLongText("Mary: Soon it will be just me and Mary", DialogLayout.Bottom)
-    tiles.setTileAt(location, assets.tile`copyyyyyyyyyyyyyn`)
+    tiles.setCurrentTilemap(tilemap`level54`)
+    bossbattle1()
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile21`, function (sprite, location) {
     game.showLongText("open the portal with a button", DialogLayout.Bottom)
@@ -558,12 +559,25 @@ controller.right.onEvent(ControllerButtonEvent.Pressed, function () {
     true
     )
 })
+function bossbattle1 () {
+    timer.after(500, function () {
+        tiles.setCurrentTilemap(tilemap`level52`)
+    })
+    timer.after(2500, function () {
+        tiles.setCurrentTilemap(tilemap`level53`)
+    })
+}
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile84`, function (sprite, location) {
     tiles.setCurrentTilemap(tilemap`level50`)
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile8`, function (sprite, location) {
     tiles.setCurrentTilemap(tilemap`level2`)
     mySprite.setPosition(82, -3)
+})
+scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile93`, function (sprite, location) {
+    timer.after(500, function () {
+        game.gameOver(false)
+    })
 })
 controller.down.onEvent(ControllerButtonEvent.Pressed, function () {
     animation.runImageAnimation(
