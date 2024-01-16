@@ -364,6 +364,13 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile29`, function (sprite, 
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile85`, function (sprite, location) {
     tiles.setCurrentTilemap(tilemap`level50`)
 })
+scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile90`, function (sprite, location) {
+    game.showLongText("Mary: You have come a long way", DialogLayout.Bottom)
+    game.showLongText("Mary: For now ", DialogLayout.Bottom)
+    game.showLongText("Mary: This is the end Ava!", DialogLayout.Bottom)
+    game.showLongText("Mary: Soon it will be just me and Mary", DialogLayout.Bottom)
+    tiles.setTileAt(location, assets.tile`copyyyyyyyyyyyyyn`)
+})
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile21`, function (sprite, location) {
     game.showLongText("open the portal with a button", DialogLayout.Bottom)
     tiles.setCurrentTilemap(tilemap`level23`)

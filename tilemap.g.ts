@@ -188,6 +188,8 @@ namespace myTiles {
     export const tile92 = image.ofBuffer(hex``);
     //% fixedInstance jres blockIdentity=images._tile
     export const tile93 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile94 = image.ofBuffer(hex``);
 
     helpers._registerFactory("tilemap", function(name: string) {
         switch(helpers.stringTrim(name)) {
@@ -1007,7 +1009,7 @@ namespace myTiles {
 . . . . . . . . . . . . . . . . 
 . . . . . . . . . . . . . . . . 
 . . . . . . . . . . . . . . . . 
-`, [myTiles.transparency16,myTiles.tile89,myTiles.tile73,myTiles.tile90,myTiles.tile91,myTiles.tile92,myTiles.tile93], TileScale.Sixteen);
+`, [myTiles.transparency16,myTiles.tile89,myTiles.tile73,myTiles.tile90,myTiles.tile91,myTiles.tile92,myTiles.tile93,myTiles.tile94], TileScale.Sixteen);
         }
         return null;
     })
@@ -1201,6 +1203,8 @@ namespace myTiles {
             case "tile92":return tile92;
             case "myTile90":
             case "tile93":return tile93;
+            case "copyyyyyyyyyyyyyn":
+            case "tile94":return tile94;
         }
         return null;
     })
