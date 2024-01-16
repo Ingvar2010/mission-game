@@ -361,6 +361,9 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile29`, function (sprite, 
     )
     info.setScore(10)
 })
+scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile85`, function (sprite, location) {
+    tiles.setCurrentTilemap(tilemap`level50`)
+})
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile21`, function (sprite, location) {
     game.showLongText("open the portal with a button", DialogLayout.Bottom)
     tiles.setCurrentTilemap(tilemap`level23`)
@@ -372,6 +375,7 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile16`, function (sprite, 
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile54`, function (sprite, location) {
     game.showLongText("arym si ont owh uoy iknth hse si", DialogLayout.Bottom)
     tiles.setCurrentTilemap(tilemap`level48`)
+    tiles.setTileAt(location, assets.tile`coop`)
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile81`, function (sprite, location) {
     tiles.setCurrentTilemap(tilemap`level43`)
@@ -546,6 +550,9 @@ controller.right.onEvent(ControllerButtonEvent.Pressed, function () {
     200,
     true
     )
+})
+scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile84`, function (sprite, location) {
+    tiles.setCurrentTilemap(tilemap`level50`)
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile8`, function (sprite, location) {
     tiles.setCurrentTilemap(tilemap`level2`)
