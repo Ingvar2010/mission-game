@@ -550,12 +550,6 @@
         "tilemapTile": true,
         "displayName": "myTile87"
     },
-    "tile92": {
-        "data": "hwQQABAAAAD//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////w==",
-        "mimeType": "image/x-mkcd-f4",
-        "tilemapTile": true,
-        "displayName": "myTile89"
-    },
     "tile93": {
         "data": "hwQQABAAAAD/v7v7/////7+7u7v/////v7v///////+/+/////////+7y/z/zMzMv9vNzM/MzMy/y83MzMzM/7/MzMzMzMz/v8zMzMzMzP+/zM3MzMzM/7/bzczPzMzMv7vM/P/MzMy//////////7+7+////////7u7u////////7u7/////w==",
         "mimeType": "image/x-mkcd-f4",
@@ -567,6 +561,12 @@
         "mimeType": "image/x-mkcd-f4",
         "tilemapTile": true,
         "displayName": "copyyyyyyyyyyyyyn"
+    },
+    "tile92": {
+        "data": "hwQQABAAAAD////////////////M/////////8/8///PzPz///z/////////////z8z/////////z////////P//////z//8/////P/P//z//8z8/8z//P/////P/P//////z8z////////////////M/P/////////PzPz//////////////w==",
+        "mimeType": "image/x-mkcd-f4",
+        "tilemapTile": true,
+        "displayName": "myTile89"
     },
     "level3": {
         "id": "level3",
@@ -1240,8 +1240,7 @@
             "myTiles.tile90",
             "myTiles.tile91",
             "myTiles.tile92",
-            "myTiles.tile93",
-            "myTiles.tile94"
+            "myTiles.tile93"
         ],
         "displayName": "level50"
     },
