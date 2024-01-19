@@ -1,6 +1,6 @@
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile0`, function (sprite, location) {
     game.showLongText("hi my name is Greg can you get 3 things for me be quick!", DialogLayout.Bottom)
-    info.startCountdown(30)
+    info.startCountdown(15)
     tiles.setCurrentTilemap(tilemap`level0`)
 })
 controller.up.onEvent(ControllerButtonEvent.Pressed, function () {
@@ -365,10 +365,10 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile85`, function (sprite, 
     tiles.setCurrentTilemap(tilemap`level50`)
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile90`, function (sprite, location) {
-    game.showLongText("Mary: You have come a long way", DialogLayout.Bottom)
-    game.showLongText("Mary: For now ", DialogLayout.Bottom)
-    game.showLongText("Mary: This is the end Ava!", DialogLayout.Bottom)
-    game.showLongText("Mary: Soon it will be just me and Mary", DialogLayout.Bottom)
+    game.showLongText("M: You have come a long way", DialogLayout.Bottom)
+    game.showLongText("M: For now ", DialogLayout.Bottom)
+    game.showLongText("M: This is the end Ava!", DialogLayout.Bottom)
+    game.showLongText("M: Soon it will be just me and Mary", DialogLayout.Bottom)
     tiles.setCurrentTilemap(tilemap`level54`)
     bossbattle1()
 })
@@ -386,8 +386,8 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile54`, function (sprite, 
     tiles.setTileAt(location, assets.tile`coop`)
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile81`, function (sprite, location) {
-    tiles.setCurrentTilemap(tilemap`level43`)
     mySprite.setPosition(-1, 119)
+    tiles.setCurrentTilemap(tilemap`level43`)
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile20`, function (sprite, location) {
     tiles.setCurrentTilemap(tilemap`level1`)
@@ -565,6 +565,12 @@ function bossbattle1 () {
     })
     timer.after(2500, function () {
         tiles.setCurrentTilemap(tilemap`level53`)
+    })
+    timer.after(3000, function () {
+        game.showLongText("Mary: that is not me ", DialogLayout.Bottom)
+        game.showLongText("Mary: this is the real me ", DialogLayout.Bottom)
+        game.showLongText("Mary: this is not the real world", DialogLayout.Bottom)
+        game.showLongText("Mary: you need to escape ", DialogLayout.Bottom)
     })
 }
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile84`, function (sprite, location) {
