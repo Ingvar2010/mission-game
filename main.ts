@@ -575,7 +575,6 @@ function bossbattle1 () {
         game.showLongText("Mary: this is not the real world", DialogLayout.Bottom)
         game.showLongText("Mary: you need to escape ", DialogLayout.Bottom)
         game.showLongText("Mary: but be careful of the spikes", DialogLayout.Bottom)
-        tiles.setCurrentTilemap(tilemap`level55`)
     })
 }
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile84`, function (sprite, location) {
@@ -869,7 +868,7 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile28`, function (sprite, 
 })
 let mySprite: Sprite = null
 tiles.setCurrentTilemap(tilemap`level7`)
-mySprite = sprites.create(assets.image`myImage0`, SpriteKind.Player)
+mySprite = sprites.create(assets.image`concept fyrir ava`, SpriteKind.Player)
 controller.moveSprite(mySprite)
 scene.cameraFollowSprite(mySprite)
 scene.setBackgroundColor(13)
