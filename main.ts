@@ -180,6 +180,9 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile7`, function (sprite, l
     tiles.setTileAt(location, sprites.castle.tileGrass1)
     info.changeScoreBy(1)
 })
+controller.down.onEvent(ControllerButtonEvent.Released, function () {
+	
+})
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile12`, function (sprite, location) {
     game.showLongText("HAHAHAHA!", DialogLayout.Bottom)
     game.gameOver(false)
@@ -607,6 +610,31 @@ function bossbattle1 () {
 }
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile84`, function (sprite, location) {
     tiles.setCurrentTilemap(tilemap`level50`)
+})
+controller.up.onEvent(ControllerButtonEvent.Released, function () {
+    animation.runImageAnimation(
+    mySprite,
+    [img`
+        . . . . . f f f f f f . . . . . 
+        . . . . f e e e e e e f . . . . 
+        . . . f e e e e e e e e f . . . 
+        . . . f e e e e e e e e f . . . 
+        . . . f e e e e e e e e f . . . 
+        . . f e e e e e e e e e e f . . 
+        . . f e e e e e e e e e e f . . 
+        . f e e e e e e e e e e e e f . 
+        . f e e e e e e e e e e e e f . 
+        . f e e e e e e e e e e e e f . 
+        . . f e e e e e e e e e e f f . 
+        . . f d d 7 7 7 7 7 7 d d f . . 
+        . . f f f 7 7 7 7 7 7 f f f . . 
+        . . . . f a a a a a a f . . . . 
+        . . . . f a a f f a a f . . . . 
+        . . . . f f f . . f f f . . . . 
+        `],
+    200,
+    true
+    )
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile8`, function (sprite, location) {
     tiles.setCurrentTilemap(tilemap`level2`)
