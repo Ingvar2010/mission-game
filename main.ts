@@ -1,5 +1,6 @@
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile0`, function (sprite, location) {
-    game.showLongText("hi my name is Greg can you get 3 things for me be quick!", DialogLayout.Bottom)
+    game.showLongText("Greg: hi my name is Greg can you get 3 things for me be quick!", DialogLayout.Bottom)
+    game.showLongText("Greg: or else...", DialogLayout.Bottom)
     info.startCountdown(15)
     tiles.setCurrentTilemap(tilemap`level0`)
 })
@@ -7,39 +8,39 @@ controller.up.onEvent(ControllerButtonEvent.Pressed, function () {
     animation.runImageAnimation(
     mySprite,
     [img`
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . e e e e e e . . . . . 
-        . . . . e e e e e e e e . . . . 
-        . . . . e e e e e e e e . . . . 
-        . . . . e e e e e e e e . . . . 
-        . . . . e e e e e e e e . . . . 
-        . . . . e e e e e e e e . . . . 
-        . . . . . . . d d . . . . . . . 
-        . . . . . 7 7 7 7 7 7 . . . . . 
-        . . . . . 7 7 7 7 7 7 . . . . . 
-        . . . . . 7 a a a a 7 . . . . . 
-        . . . . . d a . . a d . . . . . 
-        . . . . . . . . . f f . . . . . 
+        . . . . . f f f f f f . . . . . 
+        . . . . f e e e e e e f . . . . 
+        . . . f e e e e e e e e f . . . 
+        . . . f e e e e e e e e f . . . 
+        . . . f e e e e e e e e f . . . 
+        . . f e e e e e e e e e e f . . 
+        . . f e e e e e e e e e e f . . 
+        . f e e e e e e e e e e e e f . 
+        . f e e e e e e e e e e e e f . 
+        . f e e e e e e e e e e e e f . 
+        . . f e e e e e e e e e e f . . 
+        . . f d d 7 7 7 7 7 7 f f f . . 
+        . . f f f 7 7 7 7 7 f d d f . . 
+        . . . . f a a a a a f f f . . . 
+        . . . . f a a f f f f f . . . . 
+        . . . . f f f . . . . . . . . . 
         `,img`
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . e e e e e e . . . . . 
-        . . . . e e e e e e e e . . . . 
-        . . . . e e e e e e e e . . . . 
-        . . . . e e e e e e e e . . . . 
-        . . . . e e e e e e e e . . . . 
-        . . . . e e e e e e e e . . . . 
-        . . . . . . . d d . . . . . . . 
-        . . . . . 7 7 7 7 7 7 . . . . . 
-        . . . . . 7 7 7 7 7 7 . . . . . 
-        . . . . . 7 a a a a 7 . . . . . 
-        . . . . . d a . . a d . . . . . 
-        . . . . . f f . . . . . . . . . 
+        . . . . . f f f f f f . . . . . 
+        . . . . f e e e e e e f . . . . 
+        . . . f e e e e e e e e f . . . 
+        . . . f e e e e e e e e f . . . 
+        . . . f e e e e e e e e f . . . 
+        . . f e e e e e e e e e e f . . 
+        . . f e e e e e e e e e e f . . 
+        . f e e e e e e e e e e e e f . 
+        . f e e e e e e e e e e e e f . 
+        . f e e e e e e e e e e e e f . 
+        . . f e e e e e e e e e e f . . 
+        . . f f f 7 7 7 7 7 7 d d f . . 
+        . . f d d f 7 7 7 7 7 f f f . . 
+        . . . f f f a a a a a f . . . . 
+        . . . . f f f f f a a f . . . . 
+        . . . . . . . . . f f f . . . . 
         `],
     200,
     true
@@ -262,6 +263,31 @@ controller.left.onEvent(ControllerButtonEvent.Pressed, function () {
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile9`, function (sprite, location) {
     tiles.setCurrentTilemap(tilemap`level2`)
     mySprite.setPosition(82, -3)
+})
+controller.right.onEvent(ControllerButtonEvent.Released, function () {
+    animation.runImageAnimation(
+    mySprite,
+    [img`
+        . . . . . f f f f f . . . . . . 
+        . . . . f e e e e e f . . . . . 
+        . . . f e e e e e e e f . . . . 
+        . . . f e e e e f f f f . . . . 
+        . . . f e e e f d d d f . . . . 
+        . . f e e e e f d f d f . . . . 
+        . . f e e e f d d f d f . . . . 
+        . f e e e e f d d d d f . . . . 
+        . f e e e e e f f f f . . . . . 
+        . f e e e e f 7 7 f . . . . . . 
+        . . f e e f 7 7 7 f . . . . . . 
+        . . . f f f 7 7 7 f . . . . . . 
+        . . . . . f 7 7 7 f . . . . . . 
+        . . . . . f a a a f . . . . . . 
+        . . . . . f a a a f . . . . . . 
+        . . . . . f f f f f . . . . . . 
+        `],
+    200,
+    true
+    )
 })
 info.onCountdownEnd(function () {
     game.gameOver(false)
@@ -487,73 +513,73 @@ controller.right.onEvent(ControllerButtonEvent.Pressed, function () {
     animation.runImageAnimation(
     mySprite,
     [img`
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . e e e . . . . . . . 
-        . . . . . e e d d . . . . . . . 
-        . . . . . e e d f . . . . . . . 
-        . . . . . e d d d . . . . . . . 
-        . . . . . e e d d . . . . . . . 
-        . . . . . e e d . . . . . . . . 
-        . . . . . . 7 7 7 . . . . . . . 
-        . . . . . . 7 7 7 . . . . . . . 
-        . . . . . . 7 7 7 . . . . . . . 
-        . . . . . . a a a . . . . . . . 
-        . . . . . . c . a a a . . . . . 
-        . . . . f c c . . . a . . . . . 
-        . . . . f . . . . . f f . . . . 
+        . . . . . f f f f f . . . . . . 
+        . . . . f e e e e e f . . . . . 
+        . . . f e e e e e e e f . . . . 
+        . . . f e e e e f f f f . . . . 
+        . . . f e e e f d d d f . . . . 
+        . . f e e e e f d f d f . . . . 
+        . . f e e e f d d f d f . . . . 
+        . f e e e e f d d d d f . . . . 
+        . f e e e e e f f f f . . . . . 
+        . f e e e e f 7 7 f . . . . . . 
+        . . f e e f 7 7 7 f . . . . . . 
+        . . . f f f 7 7 7 f f f . . . . 
+        . . . . f a a a a a a f . . . . 
+        . . . f f c f f f f a f . . . . 
+        . . . f c c f . . f a f . . . . 
+        . . . f f f f . . f f f . . . . 
         `,img`
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . e e e . . . . . . . 
-        . . . . . e e d d . . . . . . . 
-        . . . . . e e d f . . . . . . . 
-        . . . . . e d d d . . . . . . . 
-        . . . . . e e d d . . . . . . . 
-        . . . . . e e d . . . . . . . . 
-        . . . . . . 7 7 7 . . . . . . . 
-        . . . . . . 7 7 7 . . . . . . . 
-        . . . . . . 7 7 7 . . . . . . . 
-        . . . . . . a a a . . . . . . . 
-        . . . . . . c . a . . . . . . . 
-        . . . . . . c . a . . . . . . . 
-        . . . . . . f f f f . . . . . . 
+        . . . . . f f f f f . . . . . . 
+        . . . . f e e e e e f . . . . . 
+        . . . f e e e e e e e f . . . . 
+        . . . f e e e e f f f f . . . . 
+        . . . f e e e f d d d f . . . . 
+        . . f e e e e f d f d f . . . . 
+        . . f e e e f d d f d f . . . . 
+        . f e e e e f d d d d f . . . . 
+        . f e e e e e f f f f . . . . . 
+        . f e e e e f 7 7 f . . . . . . 
+        . . f e e f 7 7 7 f . . . . . . 
+        . . . f f f 7 7 7 f . . . . . . 
+        . . . . . f f f f f . . . . . . 
+        . . . . . f c a a f . . . . . . 
+        . . . . . f c a a f . . . . . . 
+        . . . . . f f f f f . . . . . . 
         `,img`
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . e e e . . . . . . . 
-        . . . . . e e d d . . . . . . . 
-        . . . . . e e d f . . . . . . . 
-        . . . . . e d d d . . . . . . . 
-        . . . . . e e d d . . . . . . . 
-        . . . . . e e d . . . . . . . . 
-        . . . . . . 7 7 7 . . . . . . . 
-        . . . . . . 7 7 7 . . . . . . . 
-        . . . . . . 7 7 7 . . . . . . . 
-        . . . . . . a a a . . . . . . . 
-        . . . . . . a . c c c . . . . . 
-        . . . . f a a . . . c . . . . . 
-        . . . . f . . . . . f f . . . . 
+        . . . . . f f f f f . . . . . . 
+        . . . . f e e e e e f . . . . . 
+        . . . f e e e e e e e f . . . . 
+        . . . f e e e e f f f f . . . . 
+        . . . f e e e f d d d f . . . . 
+        . . f e e e e f d f d f . . . . 
+        . . f e e e f d d f d f . . . . 
+        . f e e e e f d d d d f . . . . 
+        . f e e e e e f f f f . . . . . 
+        . f e e e e f 7 7 f . . . . . . 
+        . . f e e f 7 7 7 f . . . . . . 
+        . . . f f f 7 7 7 f f f . . . . 
+        . . . . f a a a a c c f . . . . 
+        . . . f f a f f f f c f . . . . 
+        . . . f a a f . . f c f . . . . 
+        . . . f f f f . . f f f . . . . 
         `,img`
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . e e e . . . . . . . 
-        . . . . . e e d d . . . . . . . 
-        . . . . . e e d f . . . . . . . 
-        . . . . . e d d d . . . . . . . 
-        . . . . . e e d d . . . . . . . 
-        . . . . . e e d . . . . . . . . 
-        . . . . . . 7 7 7 . . . . . . . 
-        . . . . . . 7 7 7 . . . . . . . 
-        . . . . . . 7 7 7 . . . . . . . 
-        . . . . . . a a a . . . . . . . 
-        . . . . . . a . c . . . . . . . 
-        . . . . . . a . c . . . . . . . 
-        . . . . . . f f f f . . . . . . 
+        . . . . . f f f f f . . . . . . 
+        . . . . f e e e e e f . . . . . 
+        . . . f e e e e e e e f . . . . 
+        . . . f e e e e f f f f . . . . 
+        . . . f e e e f d d d f . . . . 
+        . . f e e e e f d f d f . . . . 
+        . . f e e e f d d f d f . . . . 
+        . f e e e e f d d d d f . . . . 
+        . f e e e e e f f f f . . . . . 
+        . f e e e e f 7 7 f . . . . . . 
+        . . f e e f 7 7 7 f . . . . . . 
+        . . . f f f 7 7 7 f . . . . . . 
+        . . . . . f f f f f . . . . . . 
+        . . . . . f a a c f . . . . . . 
+        . . . . . f a a c f . . . . . . 
+        . . . . . f f f f f . . . . . . 
         `],
     200,
     true
@@ -575,6 +601,8 @@ function bossbattle1 () {
         game.showLongText("Mary: this is not the real world", DialogLayout.Bottom)
         game.showLongText("Mary: you need to escape ", DialogLayout.Bottom)
         game.showLongText("Mary: but be careful of the spikes", DialogLayout.Bottom)
+        tiles.setCurrentTilemap(tilemap`level55`)
+        bossbattle2()
     })
 }
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile84`, function (sprite, location) {
@@ -593,39 +621,39 @@ controller.down.onEvent(ControllerButtonEvent.Pressed, function () {
     animation.runImageAnimation(
     mySprite,
     [img`
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . e e e e e e . . . . . 
-        . . . . e e d d d d e e . . . . 
-        . . . . e d d d d d d e . . . . 
-        . . . . e d f d d f d e . . . . 
-        . . . . e d d d d d d e . . . . 
-        . . . . e e d d d d e e . . . . 
-        . . . . . . . d d . . . . . . . 
-        . . . . . 7 7 7 7 7 7 . . . . . 
-        . . . . . 7 7 7 7 7 7 . . . . . 
-        . . . . . 7 a a a a 7 . . . . . 
-        . . . . . d a . . a d . . . . . 
-        . . . . . f f . . . . . . . . . 
+        . . . . . f f f f f f . . . . . 
+        . . . . f e e e e e e f . . . . 
+        . . . f e e e e e e 8 e f . . . 
+        . . . f e e f f f f e e f . . . 
+        . . . f e f d d d d f e f . . . 
+        . . f e f d f d d f d f e f . . 
+        . . f e f d f d d f d f e f . . 
+        . f e e e f d d d d f e e e f . 
+        . f e e f f f f f f f f f f f . 
+        . f e f 7 7 7 7 7 7 f d d f f . 
+        . . f f f 7 7 7 7 7 f d d f . . 
+        . . f d d f 7 7 7 7 f f f . . . 
+        . . f d d f f f f f f f . . . . 
+        . . . f f f a a a a a f . . . . 
+        . . . . f f f f f a a f . . . . 
+        . . . . . . . . . f f f . . . . 
         `,img`
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . e e e e e e . . . . . 
-        . . . . e e d d d d e e . . . . 
-        . . . . e d d d d d d e . . . . 
-        . . . . e d f d d f d e . . . . 
-        . . . . e d d d d d d e . . . . 
-        . . . . e e d d d d e e . . . . 
-        . . . . . . . d d . . . . . . . 
-        . . . . . 7 7 7 7 7 7 . . . . . 
-        . . . . . 7 7 7 7 7 7 . . . . . 
-        . . . . . 7 a a a a 7 . . . . . 
-        . . . . . d a . . a d . . . . . 
-        . . . . . . . . . f f . . . . . 
+        . . . . . f f f f f f . . . . . 
+        . . . . f e e e e e e f . . . . 
+        . . . f e e e e e e 8 e f . . . 
+        . . . f e e f f f f e e f . . . 
+        . . . f e f d d d d f e f . . . 
+        . . f e f d f d d f d f e f . . 
+        . . f e f d f d d f d f e f . . 
+        . f e e e f d d d d f e e e f . 
+        . f f f f f f f f f f f e e f . 
+        . f f d d f 7 7 7 7 7 7 f e f . 
+        . . f d d f 7 7 7 7 7 f f f . . 
+        . . . f f f 7 7 7 7 f d d f . . 
+        . . . . f f f f f f f d d f . . 
+        . . . . f a a a a a f f f . . . 
+        . . . . f a a f f f f f . . . . 
+        . . . . f f f . . . . . . . . . 
         `],
     200,
     true
@@ -645,6 +673,11 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile61`, function (sprite, 
     game.showLongText("join us", DialogLayout.Bottom)
     tiles.setTileAt(location, assets.tile`myTile82`)
 })
+function bossbattle2 () {
+    timer.after(2000, function () {
+        tiles.setCurrentTilemap(tilemap`level58`)
+    })
+}
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile62`, function (sprite, location) {
     game.gameOver(false)
 })
