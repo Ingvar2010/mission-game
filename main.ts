@@ -181,7 +181,29 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile7`, function (sprite, l
     info.changeScoreBy(1)
 })
 controller.down.onEvent(ControllerButtonEvent.Released, function () {
-	
+    animation.runImageAnimation(
+    mySprite,
+    [img`
+        . . . . . f f f f f f . . . . . 
+        . . . . f e e e e e e f . . . . 
+        . . . f e e e e e e 8 e f . . . 
+        . . . f e e f f f f e e f . . . 
+        . . . f e f d d d d f e f . . . 
+        . . f e f d f d d f d f e f . . 
+        . . f e f d f d d f d f e f . . 
+        . f e e e f d d d d f e e e f . 
+        . f e e f f f f f f f f e e f . 
+        . f f f f 7 7 7 7 7 7 f f f f . 
+        . . f d d f 7 7 7 7 f d d f . . 
+        . . f d d f 7 7 7 7 f d d f . . 
+        . . . f f f f f f f f f f . . . 
+        . . . . f a a a a a a f . . . . 
+        . . . . f a a f f a a f . . . . 
+        . . . . f f f . . f f f . . . . 
+        `],
+    200,
+    true
+    )
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile12`, function (sprite, location) {
     game.showLongText("HAHAHAHA!", DialogLayout.Bottom)
@@ -191,75 +213,75 @@ controller.left.onEvent(ControllerButtonEvent.Pressed, function () {
     animation.runImageAnimation(
     mySprite,
     [img`
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . e e e . . . . . . 
-        . . . . . . . d d e e . . . . . 
-        . . . . . . . f d e e . . . . . 
-        . . . . . . . d d d e . . . . . 
-        . . . . . . . d d e e . . . . . 
-        . . . . . . . . d e e . . . . . 
-        . . . . . . . 7 7 7 . . . . . . 
-        . . . . . . . 7 7 7 . . . . . . 
-        . . . . . . . 7 7 7 . . . . . . 
-        . . . . . . . a a a . . . . . . 
-        . . . . . a a a . c . . . . . . 
-        . . . . . a . . . c c f . . . . 
-        . . . . f f . . . . . f . . . . 
+        . . . . . . f f f f f . . . . . 
+        . . . . . f e e e e e f . . . . 
+        . . . . f e e e e e e e f . . . 
+        . . . . f f f f e e e e f . . . 
+        . . . . f d d d f e e e f . . . 
+        . . . . f d f d f e e e e f . . 
+        . . . . f d f d d f e e e f . . 
+        . . . . f d d d d f e e e e f . 
+        . . . . . f f f f e e e e e f . 
+        . . . . . . f 7 7 f e e e e f . 
+        . . . . . . f 7 7 7 f e e f . . 
+        . . . . f f f 7 7 7 f f f . . . 
+        . . . . f f a a a a f f . . . . 
+        . . . f f a a f f c c f f . . . 
+        . . . f a a f f f f c c f . . . 
+        . . . f f f f . . f f f f . . . 
         `,img`
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . e e e . . . . . . 
-        . . . . . . . d d e e . . . . . 
-        . . . . . . . f d e e . . . . . 
-        . . . . . . . d d d e . . . . . 
-        . . . . . . . d d e e . . . . . 
-        . . . . . . . . d e e . . . . . 
-        . . . . . . . 7 7 7 . . . . . . 
-        . . . . . . . 7 7 7 . . . . . . 
-        . . . . . . . 7 7 7 . . . . . . 
-        . . . . . . . a a a . . . . . . 
-        . . . . . . . a . c . . . . . . 
-        . . . . . . . a . c . . . . . . 
-        . . . . . . f f f f . . . . . . 
+        . . . . . . f f f f f . . . . . 
+        . . . . . f e e e e e f . . . . 
+        . . . . f e e e e e e e f . . . 
+        . . . . f f f f e e e e f . . . 
+        . . . . f d d d f e e e f . . . 
+        . . . . f d f d f e e e e f . . 
+        . . . . f d f d d f e e e f . . 
+        . . . . f d d d d f e e e e f . 
+        . . . . . f f f f e e e e e f . 
+        . . . . . . f 7 7 f e e e e f . 
+        . . . . . . f 7 7 7 f e e f . . 
+        . . . . . . f 7 7 7 f f f . . . 
+        . . . . . . f a a c f . . . . . 
+        . . . . . . f a a c f . . . . . 
+        . . . . . . f a a c f . . . . . 
+        . . . . . . f f f f f . . . . . 
         `,img`
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . e e e . . . . . . 
-        . . . . . . . d d e e . . . . . 
-        . . . . . . . f d e e . . . . . 
-        . . . . . . . d d d e . . . . . 
-        . . . . . . . d d e e . . . . . 
-        . . . . . . . . d e e . . . . . 
-        . . . . . . . 7 7 7 . . . . . . 
-        . . . . . . . 7 7 7 . . . . . . 
-        . . . . . . . 7 7 7 . . . . . . 
-        . . . . . . . a a a . . . . . . 
-        . . . . . c c c . a . . . . . . 
-        . . . . . c . . . a a f . . . . 
-        . . . . f f . . . . . f . . . . 
+        . . . . . . f f f f f . . . . . 
+        . . . . . f e e e e e f . . . . 
+        . . . . f e e e e e e e f . . . 
+        . . . . f f f f e e e e f . . . 
+        . . . . f d d d f e e e f . . . 
+        . . . . f d f d f e e e e f . . 
+        . . . . f d f d d f e e e f . . 
+        . . . . f d d d d f e e e e f . 
+        . . . . . f f f f e e e e e f . 
+        . . . . . . f 7 7 f e e e e f . 
+        . . . . . . f 7 7 7 f e e f . . 
+        . . . . f f f 7 7 7 f f f . . . 
+        . . . . f f c c c c f f . . . . 
+        . . . f f c c f f a a f f . . . 
+        . . . f c c f f f f a a f . . . 
+        . . . f f f f . . f f f f . . . 
         `,img`
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . e e e . . . . . . 
-        . . . . . . . d d e e . . . . . 
-        . . . . . . . f d e e . . . . . 
-        . . . . . . . d d d e . . . . . 
-        . . . . . . . d d e e . . . . . 
-        . . . . . . . . d e e . . . . . 
-        . . . . . . . 7 7 7 . . . . . . 
-        . . . . . . . 7 7 7 . . . . . . 
-        . . . . . . . 7 7 7 . . . . . . 
-        . . . . . . . a a a . . . . . . 
-        . . . . . . . c . a . . . . . . 
-        . . . . . . . c . a . . . . . . 
-        . . . . . . f f f f . . . . . . 
+        . . . . . . f f f f f . . . . . 
+        . . . . . f e e e e e f . . . . 
+        . . . . f e e e e e e e f . . . 
+        . . . . f f f f e e e e f . . . 
+        . . . . f d d d f e e e f . . . 
+        . . . . f d f d f e e e e f . . 
+        . . . . f d f d d f e e e f . . 
+        . . . . f d d d d f e e e e f . 
+        . . . . . f f f f e e e e e f . 
+        . . . . . . f 7 7 f e e e e f . 
+        . . . . . . f 7 7 7 f e e f . . 
+        . . . . . . f 7 7 7 f f f . . . 
+        . . . . . . f c a a f . . . . . 
+        . . . . . . f c a a f . . . . . 
+        . . . . . . f c a a f . . . . . 
+        . . . . . . f f f f f . . . . . 
         `],
-    200,
+    250,
     true
     )
 })
@@ -283,12 +305,37 @@ controller.right.onEvent(ControllerButtonEvent.Released, function () {
         . f e e e e f 7 7 f . . . . . . 
         . . f e e f 7 7 7 f . . . . . . 
         . . . f f f 7 7 7 f . . . . . . 
-        . . . . . f 7 7 7 f . . . . . . 
+        . . . . . f a a a f . . . . . . 
         . . . . . f a a a f . . . . . . 
         . . . . . f a a a f . . . . . . 
         . . . . . f f f f f . . . . . . 
         `],
     200,
+    true
+    )
+})
+controller.left.onEvent(ControllerButtonEvent.Released, function () {
+    animation.runImageAnimation(
+    mySprite,
+    [img`
+        . . . . . . f f f f f . . . . . 
+        . . . . . f e e e e e f . . . . 
+        . . . . f e e e e e e e f . . . 
+        . . . . f f f f e e e e f . . . 
+        . . . . f d d d f e e e f . . . 
+        . . . . f d f d f e e e e f . . 
+        . . . . f d f d d f e e e f . . 
+        . . . . f d d d d f e e e e f . 
+        . . . . . f f f f e e e e e f . 
+        . . . . . . f 7 7 f e e e e f . 
+        . . . . . . f 7 7 7 f e e f . . 
+        . . . . . . f 7 7 7 f f f . . . 
+        . . . . . . f a a a f . . . . . 
+        . . . . . . f a a a f . . . . . 
+        . . . . . . f a a a f . . . . . 
+        . . . . . . f f f f f . . . . . 
+        `],
+    250,
     true
     )
 })
@@ -528,10 +575,10 @@ controller.right.onEvent(ControllerButtonEvent.Pressed, function () {
         . f e e e e f 7 7 f . . . . . . 
         . . f e e f 7 7 7 f . . . . . . 
         . . . f f f 7 7 7 f f f . . . . 
-        . . . . f a a a a a a f . . . . 
-        . . . f f c f f f f a f . . . . 
-        . . . f c c f . . f a f . . . . 
-        . . . f f f f . . f f f . . . . 
+        . . . . f f a a a a f f . . . . 
+        . . . f f c c f f a a f f . . . 
+        . . . f c c f f f f a a f . . . 
+        . . . f f f f . . f f f f . . . 
         `,img`
         . . . . . f f f f f . . . . . . 
         . . . . f e e e e e f . . . . . 
@@ -545,7 +592,7 @@ controller.right.onEvent(ControllerButtonEvent.Pressed, function () {
         . f e e e e f 7 7 f . . . . . . 
         . . f e e f 7 7 7 f . . . . . . 
         . . . f f f 7 7 7 f . . . . . . 
-        . . . . . f f f f f . . . . . . 
+        . . . . . f c a a f . . . . . . 
         . . . . . f c a a f . . . . . . 
         . . . . . f c a a f . . . . . . 
         . . . . . f f f f f . . . . . . 
@@ -562,10 +609,10 @@ controller.right.onEvent(ControllerButtonEvent.Pressed, function () {
         . f e e e e f 7 7 f . . . . . . 
         . . f e e f 7 7 7 f . . . . . . 
         . . . f f f 7 7 7 f f f . . . . 
-        . . . . f a a a a c c f . . . . 
-        . . . f f a f f f f c f . . . . 
-        . . . f a a f . . f c f . . . . 
-        . . . f f f f . . f f f . . . . 
+        . . . . f f c c c c f f . . . . 
+        . . . f f a a f f c c f f . . . 
+        . . . f a a f f f f c c f . . . 
+        . . . f f f f . . f f f f . . . 
         `,img`
         . . . . . f f f f f . . . . . . 
         . . . . f e e e e e f . . . . . 
@@ -579,12 +626,12 @@ controller.right.onEvent(ControllerButtonEvent.Pressed, function () {
         . f e e e e f 7 7 f . . . . . . 
         . . f e e f 7 7 7 f . . . . . . 
         . . . f f f 7 7 7 f . . . . . . 
-        . . . . . f f f f f . . . . . . 
+        . . . . . f a a c f . . . . . . 
         . . . . . f a a c f . . . . . . 
         . . . . . f a a c f . . . . . . 
         . . . . . f f f f f . . . . . . 
         `],
-    200,
+    250,
     true
     )
 })
