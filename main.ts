@@ -185,20 +185,20 @@ controller.down.onEvent(ControllerButtonEvent.Released, function () {
     mySprite,
     [img`
         . . . . . f f f f f f . . . . . 
-        . . . . f . . . . . . f . . . . 
-        . . . f . . . . . . . . f . . . 
-        . . . f . . f f f f . . f . . . 
-        . . . f . f . . . . f . f . . . 
-        . . f . f . f . . f . f . f . . 
-        . . f . f . f . . f . f . f . . 
-        . f . . . f . . . . f . . . f . 
-        . f . . f f f f f f f f . . f . 
-        . f f f f . . . . . . f f f f . 
-        . . f . . f . . . . f . . f . . 
-        . . f . . f . . . . f . . f . . 
+        . . . . f e e e e e e f . . . . 
+        . . . f e e e e e e 8 e f . . . 
+        . . . f e e f f f f e e f . . . 
+        . . . f e f d d d d f e f . . . 
+        . . f e f d f d d f d f e f . . 
+        . . f e f d f d d f d f e f . . 
+        . f e e e f d d d d f e e e f . 
+        . f e e f f f f f f f f e e f . 
+        . f f f f 7 7 7 7 7 7 f f f f . 
+        . . f d d f 6 6 6 6 f d d f . . 
+        . . f d d f 7 7 7 7 f d d f . . 
         . . . f f f f f f f f f f . . . 
-        . . . . f . . . . . . f . . . . 
-        . . . . f . . f f . . f . . . . 
+        . . . . f a a a a a a f . . . . 
+        . . . . f a a f f a a f . . . . 
         . . . . f f f . . f f f . . . . 
         `],
     500,
@@ -809,7 +809,7 @@ controller.up.onEvent(ControllerButtonEvent.Released, function () {
         . f e e e e e e e e e e e e f . 
         . f e e e e e e e e e e e e f . 
         . . f e e e e e e e e e e f f . 
-        . . f d d 7 7 7 7 7 7 d d f . . 
+        . . f d d 6 6 6 6 6 6 d d f . . 
         . . f f f 7 7 7 7 7 7 f f f . . 
         . . . . f a a a a a a f . . . . 
         . . . . f a a f f a a f . . . . 
