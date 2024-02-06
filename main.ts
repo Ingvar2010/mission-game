@@ -773,6 +773,7 @@ controller.right.onEvent(ControllerButtonEvent.Pressed, function () {
 })
 function bossbattle1 () {
     timer.after(500, function () {
+        game.splash("Beware of the spikes")
         tiles.setCurrentTilemap(tilemap`level52`)
     })
     timer.after(2500, function () {
