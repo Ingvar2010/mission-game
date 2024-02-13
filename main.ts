@@ -514,6 +514,7 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile90`, function (sprite, 
     game.showLongText("M: This is the end Ava!", DialogLayout.Bottom)
     game.showLongText("M: Soon it will be just me and Mary", DialogLayout.Bottom)
     tiles.setCurrentTilemap(tilemap`level54`)
+    game.splash("Beware of the spikes")
     bossbattle1()
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile21`, function (sprite, location) {
@@ -774,7 +775,6 @@ controller.right.onEvent(ControllerButtonEvent.Pressed, function () {
 })
 function bossbattle1 () {
     timer.after(500, function () {
-        game.splash("Beware of the spikes")
         tiles.setCurrentTilemap(tilemap`level52`)
     })
     timer.after(2500, function () {
