@@ -242,23 +242,6 @@ controller.left.onEvent(ControllerButtonEvent.Pressed, function () {
         . . . . . . f 7 7 f e e e e f . 
         . . . . . . f 6 6 6 f e e f . . 
         . . . . . f f 7 7 7 f f f . . . 
-        . . . . f f a a a a a f . . . . 
-        . . . f f c c f f f a a f . . . 
-        . . . f c c f . . . f a a f . . 
-        . . . f f f . . . . . f f f . . 
-        `,img`
-        . . . . . . f f f f f . . . . . 
-        . . . . . f e e e e e f . . . . 
-        . . . . f e e e e e e e f . . . 
-        . . . . f f f f e e e e f . . . 
-        . . . . f d d d f e e e f . . . 
-        . . . . f d f d f e e e e f . . 
-        . . . . f d f d d f e e e f . . 
-        . . . . f d d d d f e e e e f . 
-        . . . . . f f f f e e e e e f . 
-        . . . . . . f 7 7 f e e e e f . 
-        . . . . . . f 6 6 6 f e e f . . 
-        . . . . . f f 7 7 7 f f f . . . 
         . . . . . f f a a a f f . . . . 
         . . . . f f c c f a a f f . . . 
         . . . . f c c f . f a a f . . . 
@@ -310,23 +293,6 @@ controller.left.onEvent(ControllerButtonEvent.Pressed, function () {
         . . . . . . f 7 7 f e e e e f . 
         . . . . . . f 6 6 6 f e e f . . 
         . . . . . f f 7 7 7 f f f . . . 
-        . . . . f f a a a a a f . . . . 
-        . . . f f a a f f f c c f . . . 
-        . . . f a a f . . . f c c f . . 
-        . . . f f f . . . . . f f f . . 
-        `,img`
-        . . . . . . f f f f f . . . . . 
-        . . . . . f e e e e e f . . . . 
-        . . . . f e e e e e e e f . . . 
-        . . . . f f f f e e e e f . . . 
-        . . . . f d d d f e e e f . . . 
-        . . . . f d f d f e e e e f . . 
-        . . . . f d f d d f e e e f . . 
-        . . . . f d d d d f e e e e f . 
-        . . . . . f f f f e e e e e f . 
-        . . . . . . f 7 7 f e e e e f . 
-        . . . . . . f 6 6 6 f e e f . . 
-        . . . . . f f 7 7 7 f f f . . . 
         . . . . . f f a a a f f . . . . 
         . . . . f f a a f c c f f . . . 
         . . . . f a a f . f c c f . . . 
@@ -349,7 +315,7 @@ controller.left.onEvent(ControllerButtonEvent.Pressed, function () {
         . . . . . . f a a c f . . . . . 
         . . . . . . f f f f f . . . . . 
         `],
-    200,
+    150,
     true
     )
 })
@@ -662,23 +628,6 @@ controller.right.onEvent(ControllerButtonEvent.Pressed, function () {
         . f e e e e f 7 7 f . . . . . . 
         . . f e e f 6 6 6 f . . . . . . 
         . . . f f f 7 7 7 f f . . . . . 
-        . . . . f a a a a a f f . . . . 
-        . . . f a a f f f c c f f . . . 
-        . . f a a f . . . f c c f . . . 
-        . . f f f . . . . . f f f . . . 
-        `,img`
-        . . . . . f f f f f . . . . . . 
-        . . . . f e e e e e f . . . . . 
-        . . . f e e e e e e e f . . . . 
-        . . . f e e e e f f f f . . . . 
-        . . . f e e e f d d d f . . . . 
-        . . f e e e e f d f d f . . . . 
-        . . f e e e f d d f d f . . . . 
-        . f e e e e f d d d d f . . . . 
-        . f e e e e e f f f f . . . . . 
-        . f e e e e f 7 7 f . . . . . . 
-        . . f e e f 6 6 6 f . . . . . . 
-        . . . f f f 7 7 7 f f . . . . . 
         . . . . f f a a a f f . . . . . 
         . . . f f a a f c c f f . . . . 
         . . . f a a f . f c c f . . . . 
@@ -730,23 +679,6 @@ controller.right.onEvent(ControllerButtonEvent.Pressed, function () {
         . f e e e e f 7 7 f . . . . . . 
         . . f e e f 6 6 6 f . . . . . . 
         . . . f f f 7 7 7 f f . . . . . 
-        . . . . f a a a a a f f . . . . 
-        . . . f c c f f f a a f f . . . 
-        . . f c c f . . . f a a f . . . 
-        . . f f f . . . . . f f f . . . 
-        `,img`
-        . . . . . f f f f f . . . . . . 
-        . . . . f e e e e e f . . . . . 
-        . . . f e e e e e e e f . . . . 
-        . . . f e e e e f f f f . . . . 
-        . . . f e e e f d d d f . . . . 
-        . . f e e e e f d f d f . . . . 
-        . . f e e e f d d f d f . . . . 
-        . f e e e e f d d d d f . . . . 
-        . f e e e e e f f f f . . . . . 
-        . f e e e e f 7 7 f . . . . . . 
-        . . f e e f 6 6 6 f . . . . . . 
-        . . . f f f 7 7 7 f f . . . . . 
         . . . . f f a a a f f . . . . . 
         . . . f f c c f a a f f . . . . 
         . . . f c c f . f a a f . . . . 
@@ -769,7 +701,7 @@ controller.right.onEvent(ControllerButtonEvent.Pressed, function () {
         . . . . . f c a a f . . . . . . 
         . . . . . f f f f f . . . . . . 
         `],
-    200,
+    150,
     true
     )
 })
@@ -888,6 +820,15 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile61`, function (sprite, 
 function bossbattle2 () {
     timer.after(2000, function () {
         tiles.setCurrentTilemap(tilemap`level58`)
+    })
+    timer.after(3000, function () {
+        tiles.setCurrentTilemap(tilemap`level61`)
+    })
+    timer.after(4000, function () {
+        tiles.setCurrentTilemap(tilemap`level62`)
+    })
+    timer.after(7000, function () {
+        tiles.setCurrentTilemap(tilemap`level63`)
     })
 }
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile62`, function (sprite, location) {
