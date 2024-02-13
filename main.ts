@@ -530,6 +530,7 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile54`, function (sprite, 
     tiles.setTileAt(location, assets.tile`coop`)
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile81`, function (sprite, location) {
+    game.splash("Dont fall")
     tiles.setCurrentTilemap(tilemap`level43`)
     mySprite.setPosition(-1, 119)
 })
@@ -787,7 +788,6 @@ function bossbattle1 () {
         game.showLongText("Mary: this is the real me ", DialogLayout.Bottom)
         game.showLongText("Mary: this is not the real world", DialogLayout.Bottom)
         game.showLongText("Mary: you need to escape ", DialogLayout.Bottom)
-        game.showLongText("Mary: but be careful of the spikes", DialogLayout.Bottom)
         tiles.setCurrentTilemap(tilemap`level55`)
         bossbattle2()
     })
