@@ -172,9 +172,7 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile24`, function (sprite, 
     info.setScore(10)
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile13`, function (sprite, location) {
-    mySprite.setPosition(124, 111)
-    tiles.setCurrentTilemap(tilemap`level20`)
-    game.showLongText("Ava: where am i now Mary", DialogLayout.Bottom)
+    tiles.setCurrentTilemap(tilemap`level93`)
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile7`, function (sprite, location) {
     tiles.setTileAt(location, sprites.castle.tileGrass1)
@@ -750,6 +748,11 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile62`, function (sprite, 
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile10`, function (sprite, location) {
     game.showLongText("Hey Ava i know that you are very smart so can you solve my riddle", DialogLayout.Bottom)
     tiles.setCurrentTilemap(tilemap`level14`)
+})
+scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile96`, function (sprite, location) {
+    mySprite.setPosition(124, 111)
+    tiles.setCurrentTilemap(tilemap`level20`)
+    game.showLongText("Ava: where am i now Mary", DialogLayout.Bottom)
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`transparency16`, function (sprite, location) {
 	
