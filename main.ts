@@ -502,7 +502,7 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile81`, function (sprite, 
     mySprite.setPosition(-1, 119)
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile20`, function (sprite, location) {
-    music.play(music.stringPlayable("D - F - A - - - ", 500), music.PlaybackMode.UntilDone)
+    music.play(music.stringPlayable("D - F - A - - - ", 706), music.PlaybackMode.UntilDone)
     tiles.setCurrentTilemap(tilemap`level1`)
 })
 controller.right.onEvent(ControllerButtonEvent.Pressed, function () {
@@ -740,11 +740,8 @@ function bossbattle2 () {
     timer.after(4000, function () {
         tiles.setCurrentTilemap(tilemap`level62`)
     })
-    timer.after(7000, function () {
+    timer.after(6500, function () {
         tiles.setCurrentTilemap(tilemap`level63`)
-    })
-    timer.after(7500, function () {
-        tiles.setCurrentTilemap(tilemap`level56`)
     })
 }
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile62`, function (sprite, location) {
