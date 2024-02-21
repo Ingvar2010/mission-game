@@ -172,6 +172,7 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile24`, function (sprite, 
     info.setScore(10)
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile13`, function (sprite, location) {
+    info.startCountdown(30)
     tiles.setCurrentTilemap(tilemap`level93`)
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile7`, function (sprite, location) {
@@ -750,6 +751,7 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile10`, function (sprite, 
     tiles.setCurrentTilemap(tilemap`level14`)
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile96`, function (sprite, location) {
+    info.stopCountdown()
     mySprite.setPosition(124, 111)
     tiles.setCurrentTilemap(tilemap`level20`)
     game.showLongText("Ava: where am i now Mary", DialogLayout.Bottom)
